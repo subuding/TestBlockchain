@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dragonfly.testblockchain.MainActivity"
+    android:background="@mipmap/timg">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+       android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/tv_dct"
+        android:paddingRight="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:textColor="#ffffff"
+        android:text="DCT:"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_toLeftOf="@+id/tv_dct"
+        android:layout_marginTop="40dp"/>
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button_back"
+        android:text="开始交易"
+        />
+
+</RelativeLayout>
