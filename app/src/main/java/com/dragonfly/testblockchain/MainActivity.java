@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 handler.sendEmptyMessage(1);
                 try {
 //          发送该值的帐户的名称;0.01 DCT;0.005 dct费;
-                    decent.createTransactionFromName("u4896c322bfd9703b84561f595b9ed491", 1000000, 500000);
+                    decent.createTransactionFromName("uc79c6ab2fef3f2497f85719825f4e000", 1000000, 500000);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 //    这是你连接到节点的地址
-        decent = new DecentWalletManager("wss://stage-cn.alax.io:8090", new DecentListener() {
+        decent = new DecentWalletManager("wss://stage.decentgo.com:8090", new DecentListener() {
             @Override
             public void onTransactionCreated(DecentTransaction decentTransaction) {
 //    我们需要一些来自区块链的信息在广播事务到网络之前，
@@ -94,11 +94,11 @@ public class MainActivity extends AppCompatActivity {
 //    要获得帐户id和从区块链获得的活跃的pub键，您可以使用以下api
 //    curl -k --data '{"jsonrpc": "2.0", "method": "get_account_by_name", "params": ["u44606a2e10e0d17c638b898bb1f63207"], "id": 1}' https://stage.decentgo.com:8090/rpc
         decent.importWallet(
-                "5Js4UGP9XJ42UdD6hxj3wdAr5esR6ifT5JaRsJCcvy5XjftQ2pk",
-                "DCT5p92Y1ChzKQJDqSAqAC3ukCXcUhZLccfuzAsxqxGwP55dXU7pT",
-                "1.2.90",
-                "u6912049ded8f322b3fa1a06b9acc861a"
-        );
+                "5JsqeipVFGAJvuaAVAvu9mpjx9qdnPQpfEJZH92jC37EQUjMEJj",
+                "DCT7eVYHqTodxMuAoR1ifQaFEghiEZBE2oRTkCoAbpWnBGEmtLuqn",
+                "1.2.21",
+        "u2dc10b3d9c5360a929614c00c878462b"
+    );
 
     }
 
